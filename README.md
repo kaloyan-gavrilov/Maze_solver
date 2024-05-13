@@ -4,7 +4,7 @@
 
 For the generation of the maze, I chose Kruskal's algorithm as there was a lot of information about it on the Internet and it was fairly easy to implement.
 
-Here is how it works: /the explanation is taken from [Kruskal's algorithm]([https://github.com/](https://weblog.jamisbuck.org/2011/1/3/maze-generation-kruskal-s-algorithm))/
+Here is how it works: /the explanation is taken from [Kruskal's algorithm](https://weblog.jamisbuck.org/2011/1/3/maze-generation-kruskal-s-algorithm)/
 
 Kruskal’s algorithm is a method for producing a minimal spanning tree from a weighted graph.
 - Throw all of the edges in the graph into a set.
