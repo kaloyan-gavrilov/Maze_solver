@@ -41,3 +41,32 @@ Now, consider the edges (1,1)–(1,2) and (1,2)–(2,2). Neither of these has be
 After one more pass of the algorithm, we will have a finished maze.
 
 ![ninth picture of the visual represention](Pictures/9.png)
+
+## Maze Solver
+
+For solving the maze I'm using both BFS(Breadth First Search) and DFS(Depth First Search). The reason I did that since BFS is better with solving smaller mazes and DFS - with bigger ones.
+
+The program creates a visual representation of the solution path (also it can display all of the explored cells) by creating a PNG file using the Pillow library.
+
+Here's an example of a small maze being solved:
+    Maze before being solved:  
+    <pre>
+    █████  
+    █A  █  
+    █ █ █  
+    █B  █  
+    █████  
+    </pre>
+    Maze after being solved:
+    ![solved maze](maze2.png)
+
+## Using of the program:
+
+### Generating a maze:
+
+Run the program and enter the width and height of the maze you're creating. Then enter the name of the file, in which you want to save the maze.
+
+### Solving the maze:
+
+Run the program and enter the maze name you want to solve. Then enter Y (yes) or N (no) to show the explored cells. An image with the name of the maze file should be created. 
+
