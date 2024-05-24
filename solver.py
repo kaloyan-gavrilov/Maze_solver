@@ -158,9 +158,13 @@ class Maze:
             img.save(filename)
 
 
-maze = Maze("maze2.txt")
+name_of_maze = input("Enter the maze you want to be solved: ")
+show_explored = input("Do you want to show the explored cells? (Y/N): ")
+show = show_explored == "Y"
+
+maze = Maze(f"{name_of_maze}.txt")
 maze.solve()
-maze.output_image("maze2.png", show_explored = True)
+maze.output_image(f"{name_of_maze}.png", show_explored=show)
 if maze.width > 20 and maze.height > 20:
     print("DFS")
 else:
