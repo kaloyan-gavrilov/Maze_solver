@@ -60,13 +60,7 @@ Here's an example of a small maze being solved:
     Maze after being solved:
     ![solved maze](maze2.png)
 
-## Using of the program:
+## App usage
 
-### Generating a maze:
-
-Run the program and enter the width and height of the maze you're creating. Then enter the name of the file, in which you want to save the maze.
-
-### Solving the maze:
-
-Run the program and enter the maze name you want to solve. Then enter Y (yes) or N (no) to show the explored cells. An image with the name of the maze file should be created. 
+#### It's pretty straightforward, you put the wanted width and height, you click the button "Generate" and at the right side of the window you have a brand new maze :). When you want it solved, just press the "Solve" button. 
 
