@@ -52,7 +52,7 @@ def create_maze(width, height):
     return grid
 
 
-def convert_to_wall_grid(grid):
+def convert_to_wall_grid(grid, width, height):
     wall_grid = [[1] * (width * 2 + 1) for _ in range(height * 2 + 1)]
 
     for y in range(height):
@@ -79,11 +79,11 @@ def write_maze_file(wall_grid, file_name):
                     writer.write('1' if wall_grid[y][x] == 1 else ' ')
             writer.write('\n')
 
-width = int(input("Enter the width of the maze: "))
-height = int(input("Enter the height of the maze: "))
-name = input("Enter name of the file: ")
-maze_grid = create_maze(width, height)
-wall_grid = convert_to_wall_grid(maze_grid)
-write_maze_file(wall_grid, name)
+# width = int(input("Enter the width of the maze: "))
+# height = int(input("Enter the height of the maze: "))
+# name = input("Enter name of the file: ")
+# maze_grid = create_maze(width, height)
+# wall_grid = convert_to_wall_grid(maze_grid)
+# write_maze_file(wall_grid, name)
 
-print(f"Maze generated with width={width}, height={height}, seed={seed}")
+# print(f"Maze generated with width={width}, height={height}, seed={seed}")
